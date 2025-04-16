@@ -156,13 +156,10 @@ def ReviseU(u_new, u_old):
     
     T_bound = 3
     Q_bound = 0.5
-    
     T_new, Q_new = u_new
     T_old, Q_old = u_old
-    
     T_final = clamp(T_new, T_old, T_bound)
     Q_final = clamp(Q_new, Q_old, Q_bound)
-    
     return [T_final, Q_final]
 
 if __name__ == "__main__":
