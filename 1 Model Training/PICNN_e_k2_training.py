@@ -17,7 +17,6 @@ from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 from tqdm import tqdm
 device = "cuda" if torch.cuda.is_available() else "cpu"
-print(f"Using '{device}' device")
 seed = 42
 np.random.seed(seed)
 torch.manual_seed(seed)
